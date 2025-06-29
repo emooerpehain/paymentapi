@@ -46,7 +46,7 @@ app.use((req, res, next) => {
     if (data && typeof data === 'object') {
       const responseData = {
         status: data.status,
-        creator: settings.creator || "Created Using Skyzo",
+        creator: settings.creator || "Created Using Morphine",
         ...data
       };
       return originalJson.call(this, responseData);
